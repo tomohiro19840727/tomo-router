@@ -15,7 +15,7 @@ function Home() {
           岩木家のアイドルなんだ！
         </h1>
         <p className='mb-8 leading-relaxed text-xl'>僕はいつもみんなの帰りを待っているんだよ！！けど、忙しい時に触られると思わず噛んでしまうんだ（汗汗）！ でも、家族みんなを癒すために毎日頑張ってるよ!! どうかよろしくね！!</p>
-        <button className='text-white bg-green-500 py-2 px-6 border-0 rounded text-lg hover:bg-green-600 duration-300'>僕をみたい？</button>
+        <Link to="./play" className='text-white bg-green-500 py-2 px-6 border-0 rounded text-lg hover:bg-green-600 duration-300'>僕をみたい？</Link>
       </div>
         <div className='md:w-1/2 lg:max-w-lg w-5/6'>
           <img src='./img/17306487455166.jpg' alt='' />

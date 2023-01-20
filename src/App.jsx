@@ -11,6 +11,7 @@ import Setblog from './components/Setblog'
 import Sleep from './components/Sleep'
 import Cosplay from './components/Cosplay'
 import Awake from './components/Awake'
+import Play from './components/Play'
 
 function App() {
   const [isAuth, setIsAuth ] = useState(localStorage.getItem("isAuth"));
@@ -28,6 +29,7 @@ function App() {
       <Route path='/sleep' element={<Sleep />}></Route>
       <Route path='/cosplay' element={<Cosplay />}></Route>
       <Route path='/awake' element={<Awake />}></Route>
+      <Route path='/play' element={<Play />}></Route>
     </Routes>
    </Router>
   )
