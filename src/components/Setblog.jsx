@@ -39,7 +39,7 @@ function Setblog({ isAuth }) {
          <div className='nameAndDeleteButton'>
           <h3>@{post.author.username}</h3>
           <h4 className='text-3xl'>{count}</h4>
-          <button className='text-2xl' onClick={() => handleClick()}>カウントする</button>
+          <button className='text-2xl' onClick={() => handleClick()}>カウントsimasenn</button>
           {isAuth &&(
             <button onClick={() => handleDelete(post.id)}>削除</button>
           )}
