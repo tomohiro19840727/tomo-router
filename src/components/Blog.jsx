@@ -1,24 +1,40 @@
 import { addDoc, collection } from 'firebase/firestore';
+import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import { auth, db } from '../firebase';
+import { auth, db, storage } from '../firebase';
 import "./Blog.css";
 
 function Blog({ isAuth }) {
    const [title, setTitle] = useState("");
-   const [postText, setPostText] = useState("")
+   const [postText, setPostText] = useState("");
+   const [singleImage, setSingleImage ] = useState("");
 
    const navigate = useNavigate();
 
-   const createPost = async () => {
-    await addDoc(collection(db, "posts"), {
+   const handleImage = (e) => { 
+    e.preventDefault();
+    let pickedFile;
+    
+    if(e.target.files && e.target.files.length > 0 ) {
+      pickedFile = e.target.files[0];
+    setSingleImage(pickedFile);
+   }  
+ }
+
+   const createPost = async (e) => {
+    e.preventDefault();
+    const imageRef = ref(storage, `images/${singleImage.name}` );
+    uploadBytes(imageRef, singleImage).then((res) => {
+      alert("seikousimasita");
+      getDownloadURL(imageRef).then((imageUrl) => {
+      addDoc(collection(db, "posts"), {
       title: title,
       postsText: postText,
-      author: {
-        username: auth.currentUser.displayName,
-        id: auth.currentUser.uid
-      }
-    })
+      imgUrl: imageUrl,
+    });
+   });
+  });
 
     navigate("/setblog")
    };
@@ -41,6 +57,7 @@ function Blog({ isAuth }) {
         <div>投稿</div>
         <textarea placeholder='ブログ内容を記入' onChange={(e) => setPostText(e.target.value)}></textarea>
        </div>
+       <input type="file" name="" accept="png, .jpeg, .jpg, .HEIC" onChange={handleImage} />
         <button className='postButton' onClick={createPost}>投稿する</button>
       </div>
     </div>

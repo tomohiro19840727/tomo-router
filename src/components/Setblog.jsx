@@ -44,7 +44,7 @@ function Setblog({ isAuth }) {
             <div key={post.id}>
     <div class="flex flex-col md:flex-row items-center border rounded-lg overflow-hidden">
       <a href="#" class="group w-full md:w-32 lg:w-48 h-48 md:h-full block self-start shrink-0 bg-gray-100 overflow-hidden relative">
-        <img src="./img/IMG_2908.jpg" loading="lazy" alt="Photo by Minh Pham" class="w-full h-full object-cover object-center inset-0 group-hover:scale-110 transition duration-200" />
+        <img src={post.imgUrl} loading="lazy" alt="Photo by Minh Pham" class="w-full h-full object-cover object-center inset-0 group-hover:scale-110 transition duration-200" />
       </a>
 
       <div class="flex flex-col gap-2 p-4 lg:p-6">
@@ -57,9 +57,6 @@ function Setblog({ isAuth }) {
 
         <p class="text-gray-500">{post.postsText}</p>
 
-        <div>
-          <a href="#" class="text-indigo-500 hover:text-indigo-600 active:text-indigo-700 font-semibold transition duration-100">@{post.author.username}</a>
-        </div>
         <h4 className='text-3xl'>{count}</h4>
         <a href="#_" class="px-5 py-2.5 relative rounded group font-medium text-white font-medium inline-block">
 <span class="absolute top-0 left-0 w-full h-full rounded opacity-50 filter blur-sm bg-gradient-to-br from-purple-600 to-blue-500"></span>
