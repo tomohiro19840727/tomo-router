@@ -28,7 +28,8 @@ function Setblog({ isAuth }) {
     <>
     
 
-<div class="bg-white py-6 sm:py-8 lg:py-12">
+<div class="bg-white py-6 sm:py-8 lg:py-12 bg-h-screen w-full bg-gradient-to-br
+  from-violet-300 via-pink-100 to-orange-100" >
 <div class="max-w-screen-xl px-4 md:px-8 mx-auto">
   
   <div class="mb-10 md:mb-16">
@@ -38,11 +39,11 @@ function Setblog({ isAuth }) {
   </div>
   
 
-  <div class="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 md:gap-6 xl:gap-8">
+  <div class="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 md:gap-6 xl:gap-8 ">
     {postList.map((post) => {
           return(
             <div key={post.id}>
-    <div class="flex flex-col md:flex-row items-center border rounded-lg overflow-hidden">
+    <div class="flex flex-col md:flex-row items-center border rounded-lg overflow-hidden bg-white">
       <a href="#" class="group w-full md:w-32 lg:w-48 h-48 md:h-full block self-start shrink-0 bg-gray-100 overflow-hidden relative">
         <img src={post.imgUrl} loading="lazy" alt="Photo by Minh Pham" class="w-full h-full object-cover object-center inset-0 group-hover:scale-110 transition duration-200" />
       </a>

@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
     <>
-    <div className='bg-green-100'>
+    <div className='bg-white py-6 sm:py-8 lg:py-12 bg-h-screen w-full bg-gradient-to-br
+  from-violet-300 via-blue-100 to-orange-100'>
       <section className='text-gray-700' id='home'>
     <div className='flex containermx-auto py-20 px-5 flex-col md:flex-row items-center '>
       <div className='md:w-1/2 flex-grow mb-16 lg:pr-24 md:pr-16 text-center md:text-left'>
@@ -24,7 +25,8 @@ function Home() {
    </section>
     </div>
 
-<section className='text-gray-700 border-t border-gray-200'>
+<section className='text-gray-700 border-t border-gray-200 bg-white py-6 sm:py-8 lg:py-12 bg-h-screen w-full bg-gradient-to-br
+  from-violet-300 via-blue-500 to-orange-100' >
     <div className='container px-5 py-24 mx-auto'>
       <div className='text-center md-20'>
         <h1 className='text-2xl sm:text-3xl font-medium mb-2 text-gray-900'>僕の日常はこんな感じさ</h1>
@@ -153,7 +155,8 @@ function Home() {
     </div>
    </section>
 
-   <section className='text-gray-700 border-t border-gray-200 bg-blue-100'>
+   <section className='text-gray-700 border-t border-gray-200 bg-white py-6 sm:py-8 lg:py-12 bg-h-screen w-full bg-gradient-to-br
+  from-violet-300 via-blue-100 to-orange-100'>
     <div className='container px-5 py-24 mx-auto flex flex-wrap'>
       <div className='mb-10 lg:mb-0 w-full lg:w-1/2 flex justify-center'>
         <img src='./img/17306474921351.jpg' alt='' className='rounded md:w-1/2 lg:max-w-lg w-5/6'/>
