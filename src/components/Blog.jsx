@@ -1,4 +1,4 @@
-import { addDoc, collection } from 'firebase/firestore';
+import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
@@ -32,6 +32,7 @@ function Blog({ isAuth }) {
       title: title,
       postsText: postText,
       imgUrl: imageUrl,
+      createdAt: serverTimestamp()
     });
    });
   });

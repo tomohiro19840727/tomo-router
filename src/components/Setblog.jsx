@@ -1,6 +1,7 @@
-import { collection, deleteDoc, doc, getDocs } from 'firebase/firestore';
+import { collection, deleteDoc, doc, getDocs, limit, orderBy } from 'firebase/firestore';
 import React, { useEffect, useState } from 'react'
 import { auth, db } from '../firebase';
+import dayjs from "dayjs";
 
 function Setblog({ isAuth }) {
   const [postList, setPostList] = useState([]);
@@ -8,9 +9,14 @@ function Setblog({ isAuth }) {
 
  useEffect(() => {
   const getPosts = async () => {
-    const data = await getDocs(collection(db, "posts"));
-    // console.log(data.docs.map((doc) => ({ ...doc.data(), id: doc.id})))
+    const data = await getDocs(collection(db, "posts"),orderBy("createdAt"));
+    
+    // console.log(data.docs.map((doc) => ({ ...doc.data({serverTimestamp: "estimate"}).createdAt.toDate(), id: doc.id})))
+    
+    
     setPostList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id})));
+  //  console.log(postList.createdAt);
+   
   }
   getPosts();
  },[]);
@@ -41,7 +47,8 @@ function Setblog({ isAuth }) {
 
   <div class="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 md:gap-6 xl:gap-8 ">
     {postList.map((post) => {
-          return(
+
+          return (
             <div key={post.id}>
     <div class="flex flex-col md:flex-row items-center border rounded-lg overflow-hidden bg-white">
       <a href="#" class="group w-full md:w-32 lg:w-48 h-48 md:h-full block self-start shrink-0 bg-gray-100 overflow-hidden relative">
@@ -50,11 +57,14 @@ function Setblog({ isAuth }) {
 
       <div class="flex flex-col gap-2 p-4 lg:p-6">
         
-        <span class="text-gray-400 text-sm">July 19, 2021</span>
+              <span class="text-gray-800 text-xl font-bold">{dayjs.unix(post.createdAt).format('MM/DD HH:mm')}</span>
+        
 
         <h2 class="text-gray-800 text-xl font-bold">
           <a href="#" class="hover:text-indigo-500 active:text-indigo-600 transition duration-100">{post.title}</a>
         </h2>
+
+        
 
         <p class="text-gray-500">{post.postsText}</p>
 
@@ -81,15 +91,16 @@ function Setblog({ isAuth }) {
             
             </div>
             </div>
+      
           )
         })}
 
   </div>
 </div>
 </div>
-    
-      </>
-  )
+
+</>
+)
 }
 
 export default Setblog
