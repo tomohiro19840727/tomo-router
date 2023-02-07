@@ -11,11 +11,13 @@ function Home() {
       <div className='md:w-1/2 flex-grow mb-16 lg:pr-24 md:pr-16 text-center md:text-left'>
         <h1 className='text-3xl sm:text-6xl text-gray-900 font-medium mb-4'>やあ!
           <br />
-          僕の名前は『しらす』だよ!
+          僕の名前は,
+          <br /><h2 className='text-6xl text-blue-700'>『しらす』</h2>だよ!
           <br />
-          岩木家のアイドルなんだ！
+          <br/>
+          岩木家のアイドルさ！
         </h1>
-        <p className='mb-8 leading-relaxed text-xl'>僕はいつもみんなの帰りを待っているんだよ！！けど、忙しい時に触られると思わず噛んでしまうんだ（汗汗）！ でも、家族みんなを癒すために毎日頑張ってるよ!! どうかよろしくね！!</p>
+        <p className='mb-8 leading-relaxed text-xl font-bold'>僕はいつもみんなの帰りを待っているんだよ！！けど、忙しい時に触られると思わず噛んでしまうんだ（汗汗）！ でも、家族みんなを癒すために毎日頑張ってるよ!! どうかよろしくね！!</p>
         <Link to="./play" className='text-white bg-green-500 py-2 px-6 border-0 rounded text-lg hover:bg-green-600 duration-300'>僕をみたい？</Link>
       </div>
         <div className='md:w-1/2 lg:max-w-lg w-5/6'>
@@ -29,9 +31,9 @@ function Home() {
   from-violet-300 via-blue-500 to-orange-100' >
     <div className='container px-5 py-24 mx-auto'>
       <div className='text-center md-20'>
-        <h1 className='text-2xl sm:text-3xl font-medium mb-2 text-gray-900'>僕の日常はこんな感じさ</h1>
-        <p className='pb-10'>いつもは寝てばっかりいるよ、だけどみんなが帰ってきたらお出迎えもするし、後ろをついて行ったりするよ！</p>
-      <p>僕の寝ている姿や食べてる姿、可愛がられている姿も見て欲しいな^_^!
+        <h1 className='text-2xl sm:text-3xl font-medium mb-2 text-gray-900 font-bold'>僕の日常はこんな感じさ</h1>
+        <p className='pb-10 font-bold'>いつもは寝てばっかりいるよ、だけどみんなが帰ってきたらお出迎えもするし、後ろをついて行ったりするよ！</p>
+      <p className='font-bold'>僕の寝ている姿や食べてる姿、可愛がられている姿も見て欲しいな^_^!
       </p>
       </div>
 
@@ -52,12 +54,12 @@ function Home() {
     />
 </svg>
               </div>
-             <h2 className='text-gray-900 text-lg font-medium ml-2'>しらすの寝顔💤</h2>
+             <h2 className='text-gray-900 text-lg font-bold ml-2'>しらすの寝顔💤</h2>
             </div>
              <div>
-              <p>１日の半分は寝ているよ、夏は床にいるし、冬はタワーの上でぬくぬくしてるから探してみてね😁
+              <p className='font-bold'>１日の半分は寝ているよ、夏は床にいるし、冬はタワーの上でぬくぬくしてるから探してみてね😁
               </p>
-                  <Link to='/sleep' className='flex mt-3 text-green-500 items-center'>もっとみる
+                  <Link to='/sleep' className='flex mt-3 text-green-500 items-center font-bold'>もっとみる
                   <svg
                       width="24"
                       height="24"
@@ -90,13 +92,13 @@ function Home() {
     />
 </svg>
               </div>
-             <h2 className='text-gray-900 text-lg font-medium ml-2'>しらすの被り物🤶</h2>
+             <h2 className='text-gray-900 text-lg font-bold ml-2'>しらすの被り物🤶</h2>
             </div>
              <div>
-              <p>ハロウィンやサンタクロースみたいに色々コスプレできるよ。要望があったら言ってね！
+              <p className='font-bold'>ハロウィンやサンタクロースみたいに色々コスプレできるよ。要望があったら言ってね！
                 大丈夫さ、僕は『売れっ子モデル』だからね😆
               </p>
-                  <Link to='/cosplay' className='flex mt-3 text-green-500 items-center'>もっとみる
+                  <Link to='/cosplay' className='flex mt-3 text-green-500 items-center font-bold'>もっとみる
                   <svg
                       width="24"
                       height="24"
@@ -129,12 +131,12 @@ function Home() {
     />
 </svg>
               </div>
-             <h2 className='text-gray-900 text-lg font-medium ml-2'>しらすの覚醒⚡️</h2>
+             <h2 className='text-gray-900 text-lg font-bold ml-2'>しらすの覚醒⚡️</h2>
             </div>
              <div>
-              <p>いつもは大人しいけど、たまにおもちゃとかで暴れるよ！！もしよかったら僕におもちゃ頂戴ね！そのおもちゃの宣伝をしてあげよう！！ちなみにダンボールでも喜ぶよ（笑）
+              <p className='font-bold'>いつもは大人しいけど、たまにおもちゃとかで暴れるよ！！もしよかったら僕におもちゃ頂戴ね！そのおもちゃの宣伝をしてあげよう！！ちなみにダンボールでも喜ぶよ（笑）
               </p>
-                  <Link to='/awake' className='flex mt-3 text-green-500 items-center'>もっとみる
+                  <Link to='/awake' className='flex mt-3 text-green-500 items-center font-bold'>もっとみる
                   <svg
                       width="24"
                       height="24"
@@ -164,21 +166,24 @@ function Home() {
        <div className='lg:pl-12 lg:py-6 w-full lg:w-1/2 '>
         <h1 className='text-2xl sm:text-3xl font-medium text-gray-900 mb-10 text-center lg:text-left'>My Skills</h1>
         <div className='w-full'>
-          <h2>大人しさ</h2>
+          <h2 className='font-bold text-blue-400'>大人しさ</h2>
           <div className='shadow bg-green-100 mt-2 w-full'>
-             <div className='bg-green-600 text-xs leading-none py-1 text-center text-white' style={{width: "25%" }}>25%</div>
+             <div className='bg-green-600 text-xs leading-none py-1 text-center  font-bold text-blue-200' style={{width: "25%" }}>25%</div>
           </div>
-          <h2>親密度</h2>
+          <br />
+          <h2 className='font-bold text-yellow-600'>親密度</h2>
           <div className='shadow bg-green-100 mt-2 w-full'>
-             <div className='bg-green-600 text-xs leading-none py-1 text-center text-white' style={{width: "75%" }}>75%</div>
+             <div className='bg-green-600 text-xs leading-none py-1 text-center  font-bold text-yellow-200' style={{width: "75%" }}>75%</div>
           </div>
-          <h2>怒りやすさ</h2>
+          <br />
+          <h2 className='font-bold text-pink-400'>怒りやすさ</h2>
           <div className='shadow bg-green-100 mt-2 w-full'>
-             <div className='bg-green-600 text-xs leading-none py-1 text-center text-white' style={{width: "85%" }}>85%</div>
+             <div className='bg-green-600 text-xs leading-none py-1 text-center  font-bold text-pink-200' style={{width: "85%" }}>85%</div>
           </div>
-          <h2>愛され度</h2>
+          <br />
+          <h2 className='font-bold text-red-500'>愛され度</h2>
           <div className='shadow bg-green-100 mt-2 w-full'>
-             <div className='bg-green-600 text-xs leading-none py-1 text-center text-white' style={{width: "95%" }}>95%</div>
+             <div className='bg-green-600 text-xs leading-none py-1 text-center text-white font-bold'   style={{width: "95%" }}>95%</div>
           </div>
         </div>
        </div>

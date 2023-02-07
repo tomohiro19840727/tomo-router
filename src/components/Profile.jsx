@@ -8,7 +8,7 @@ function Profile() {
       <div className="mb-10 md:mb-16">
         <h2 className="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">プロフィール</h2>
   
-        <p className="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">僕の自己紹介だよ、これから有名になるからサインが欲しいなら今のうちだからね！！</p>
+        <p className="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto font-bold">僕の自己紹介だよ、これから有名になるからサインが欲しいなら今のうちだからね！！</p>
       </div>
       {/* <!-- text - end --> */}
   
@@ -20,10 +20,10 @@ function Profile() {
           <div className="bg-gradient-to-t from-gray-800 md:via-transparent to-transparent absolute inset-0 pointer-events-none"></div>
   
           <div className="relative p-4 mt-auto">
-            <span className="block text-gray-200 text-sm">July 19, 2021</span>
-            <h2 className="text-white text-xl font-semibold transition duration-100 mb-2">New trends in Tech</h2>
+            <span className="block text-gray-200 text-sm">April 09, 2022</span>
+            <h2 className="text-white text-xl font-semibold transition duration-100 mb-2"></h2>
   
-            <span className="text-indigo-300 font-semibold">Read more</span>
+            <span className="text-indigo-300 font-semibold"></span>
           </div>
         </a>
         {/* <!-- article - end --> */}
@@ -36,9 +36,9 @@ function Profile() {
   
           <div className="relative p-4 mt-auto">
             <span className="block text-gray-200 text-sm">April 07, 2021</span>
-            <h2 className="text-white text-xl font-semibold transition duration-100 mb-2">Working with legacy stacks</h2>
+            <h2 className="text-white text-xl font-semibold transition duration-100 mb-2"></h2>
   
-            <span className="text-indigo-300 font-semibold">Read more</span>
+            <span className="text-indigo-300 font-semibold"></span>
           </div>
         </a>
         {/* <!-- article - end --> */}
@@ -51,9 +51,9 @@ function Profile() {
   
           <div className="relative p-4 mt-auto">
             <span className="block text-gray-200 text-sm">March 15, 2021</span>
-            <h2 className="text-white text-xl font-semibold transition duration-100 mb-2">10 best smartphones for devs</h2>
+            <h2 className="text-white text-xl font-semibold transition duration-100 mb-2"></h2>
   
-            <span className="text-indigo-300 font-semibold">Read more</span>
+            <span className="text-indigo-300 font-semibold"></span>
           </div>
         </a>
         {/* <!-- article - end --> */}
@@ -66,9 +66,9 @@ function Profile() {
   
           <div className="relative p-4 mt-auto">
             <span className="block text-gray-200 text-sm">January 27, 2021</span>
-            <h2 className="text-white text-xl font-semibold transition duration-100 mb-2">8 High performance Notebooks</h2>
+            <h2 className="text-white text-xl font-semibold transition duration-100 mb-2"></h2>
   
-            <span className="text-indigo-300 font-semibold">Read more</span>
+            <span className="text-indigo-300 font-semibold"></span>
           </div>
         </a>
         {/* <!-- article - end --> */}

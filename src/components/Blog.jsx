@@ -26,7 +26,7 @@ function Blog({ isAuth }) {
     e.preventDefault();
     const imageRef = ref(storage, `images/${singleImage.name}` );
     uploadBytes(imageRef, singleImage).then((res) => {
-      alert("seikousimasita");
+      alert("投稿に成功しました");
       getDownloadURL(imageRef).then((imageUrl) => {
       addDoc(collection(db, "posts"), {
       title: title,
