@@ -13,10 +13,10 @@ const Navbar = ({ isAuth }) => {
       <Link to="/" className='mr-5 hover:text-blue-400 duration-300'>ホーム</Link>
       <Link to="/profile" className="mr-5 hover:text-blue-400 duration-300" >プロフィール</Link>
       
-      <Link to="/setblog" className="mr-5 hover:text-blue-400 duration-300" >ブログ</Link>
+      <Link to="/setblog" className="mr-5 hover:text-blue-400 duration-300" >しらすの日常</Link>
       {!isAuth ?  <Link to="/login" className="mr-5 hover:text-blue-400 duration-300" >ログイン</Link> : 
       <>
-      <Link to="/logout" className="mr-5 hover:text-blue-400 duration-300" >ログアウト</Link> <Link to="/blog" className="mr-5 hover:text-blue-400 duration-300" >ブログ投稿</Link> 
+      <Link to="/logout" className="mr-5 hover:text-blue-400 duration-300" >ログアウト</Link> <Link to="/blog" className="mr-5 hover:text-blue-400 duration-300" >日常投稿</Link> 
       </>}
     </nav>
   </div>

@@ -18,7 +18,7 @@ const Cosplay = () => {
           </a>
   
           <div class="flex flex-col">
-            <span class="text-gray-500">Men</span>
+            <span class="text-gray-500"></span>
             <a href="#" class="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">Business Causual</a>
           </div>
         </div>
@@ -31,7 +31,7 @@ const Cosplay = () => {
           </a>
   
           <div class="flex flex-col">
-            <span class="text-gray-500">Women</span>
+            <span class="text-gray-500"></span>
             <a href="#" class="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">Summer Season</a>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Cosplay = () => {
           </a>
   
           <div class="flex flex-col">
-            <span class="text-gray-500">Men</span>
+            <span class="text-gray-500"></span>
             <a href="#" class="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">Streetwear</a>
           </div>
         </div>
@@ -57,7 +57,7 @@ const Cosplay = () => {
           </a>
   
           <div class="flex flex-col">
-            <span class="text-gray-500">Women</span>
+            <span class="text-gray-500"></span>
             <a href="#" class="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">Sale</a>
           </div>
         </div>
@@ -75,7 +75,7 @@ const Cosplay = () => {
           </a>
   
           <div class="flex flex-col">
-            <span class="text-gray-500">Men</span>
+            <span class="text-gray-500"></span>
             <a href="#" class="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">Business Causual</a>
           </div>
         </div>
@@ -88,7 +88,7 @@ const Cosplay = () => {
           </a>
   
           <div class="flex flex-col">
-            <span class="text-gray-500">Women</span>
+            <span class="text-gray-500"></span>
             <a href="#" class="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">Summer Season</a>
           </div>
         </div>
@@ -101,7 +101,7 @@ const Cosplay = () => {
           </a>
   
           <div class="flex flex-col">
-            <span class="text-gray-500">Men</span>
+            <span class="text-gray-500"></span>
             <a href="#" class="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">Streetwear</a>
           </div>
         </div>
@@ -114,7 +114,7 @@ const Cosplay = () => {
           </a>
   
           <div class="flex flex-col">
-            <span class="text-gray-500">Women</span>
+            <span class="text-gray-500"></span>
             <a href="#" class="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">Sale</a>
           </div>
         </div>
@@ -132,7 +132,7 @@ const Cosplay = () => {
           </a>
   
           <div class="flex flex-col">
-            <span class="text-gray-500">Men</span>
+            <span class="text-gray-500"></span>
             <a href="#" class="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">Business Causual</a>
           </div>
         </div>
@@ -145,7 +145,7 @@ const Cosplay = () => {
           </a>
   
           <div class="flex flex-col">
-            <span class="text-gray-500">Women</span>
+            <span class="text-gray-500"></span>
             <a href="#" class="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">Summer Season</a>
           </div>
         </div>
@@ -158,7 +158,7 @@ const Cosplay = () => {
           </a>
   
           <div class="flex flex-col">
-            <span class="text-gray-500">Men</span>
+            <span class="text-gray-500"></span>
             <a href="#" class="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">Streetwear</a>
           </div>
         </div>
@@ -171,7 +171,7 @@ const Cosplay = () => {
           </a>
   
           <div class="flex flex-col">
-            <span class="text-gray-500">Women</span>
+            <span class="text-gray-500"></span>
             <a href="#" class="text-gray-800 hover:text-gray-500 text-lg lg:text-xl font-bold transition duration-100">Sale</a>
           </div>
         </div>

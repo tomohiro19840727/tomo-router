@@ -34,6 +34,8 @@ function Setblog({ isAuth }) {
     window.location.href = "/setblog";
   }
 
+  const sortedLists = postList.sort((a, b) => b.createdAt - a.createdAt);
+
   return (
     <>
     
@@ -50,7 +52,7 @@ function Setblog({ isAuth }) {
   
 
   <div class="grid sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-4 md:gap-6 xl:gap-8 ">
-    {postList.map((post) => {
+    {sortedLists.map((post) => {
 
           return (
             <div key={post.id}>
